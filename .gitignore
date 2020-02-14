@@ -1,1 +1,5 @@
 ./elasticsearch/data
+#because of deploy.sh, need to remove
+#docker-compose.yml so that sensitive
+#data is not stored in the repository
+.env

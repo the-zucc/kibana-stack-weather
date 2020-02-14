@@ -40,7 +40,8 @@ services:
     volumes:
       - ./logstash/pipeline:/usr/share/logstash/pipeline/
       - ./logstash/config:/usr/share/logstash/config/
-    
+      - ${SSL_PRIVKEY_LOCATION}:/ssl/privkey.pem
+      - ${SSL_CERT_LOCATION}:/ssl/cert.pem
     networks:
       elk-network:
 

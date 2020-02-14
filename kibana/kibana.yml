@@ -1,2 +1,4 @@
 server.name: kibana
 server.host: "0"
+server.ssl.certificate: "/ssl/cert.pem"
+server.ssl.key: "/ssl/privkey.pem"
